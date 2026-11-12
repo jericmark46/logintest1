@@ -114,9 +114,15 @@ Errors return `{ "message": "..." }` with `400`, `401`, `409`, or `500`.
 3. Add environment variable `VITE_API_URL` = `https://<backend-project>.vercel.app` (no trailing slash).
 4. Deploy.
 
-### Step 4 — Lock CORS to your frontend
+### Step 4 — CORS
 
-In the backend project settings, set `CLIENT_ORIGIN` to the deployed frontend origin (e.g. `https://<frontend-project>.vercel.app`) and redeploy. Multiple origins can be comma-separated.
+Origins are allowed in three ways:
+
+1. `CLIENT_ORIGIN` unset or `*` — every origin is accepted.
+2. `CLIENT_ORIGIN` lists explicit origins (comma-separated) — set it in the backend project settings to your deployed frontend URL, e.g. `https://<frontend-project>.vercel.app`, when you use a custom domain.
+3. `*.vercel.app` and `http://localhost:<port>` are always allowed, so preview deployments and local dev work without changing `CLIENT_ORIGIN`.
+
+Changing an environment variable requires a redeploy of the backend project.
 
 ## Notes
 
