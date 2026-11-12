@@ -1,0 +1,1 @@
+Two-tenant Vercel deployment of a MERN authentication app: an Express/MongoDB API and a React/Vite SPA that communicate over JWT bearer tokens.

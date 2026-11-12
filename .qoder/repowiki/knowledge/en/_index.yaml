@@ -1,0 +1,38 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: en-US
+branch: Q0DeR-MaG1C-BrAnCh-Fo2-NoN-GiT-Or-No-C0MmIt
+nodes_managed: true
+exported_at: "2026-11-12T07:15:06Z"
+modules:
+    "":
+        dir_name: MERN Auth Monorepo (Backend + Frontend)
+        title: MERN Auth Monorepo (Backend + Frontend)
+        scope:
+            - README.md
+        source_files: []
+        children:
+            - backend
+            - frontend
+        depends_on: []
+        related_to: []
+    backend:
+        dir_name: MERN Auth API Backend
+        title: MERN Auth API Backend
+        scope:
+            - backend/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: frontend
+    frontend:
+        dir_name: MERN Auth Frontend (React + Vite SPA)
+        title: MERN Auth Frontend (React + Vite SPA)
+        scope:
+            - frontend/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: backend

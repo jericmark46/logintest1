@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(command -v mongod; command -v docker; echo \"check done\")"
+    ]
+  }
+}

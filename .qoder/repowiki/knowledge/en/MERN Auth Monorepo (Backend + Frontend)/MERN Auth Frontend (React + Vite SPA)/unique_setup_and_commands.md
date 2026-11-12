@@ -1,0 +1,1 @@
+Local dev server runs on port 5173 (see `vite.config.js`). Backend URL is read from `import.meta.env.VITE_API_URL` and falls back to `http://localhost:5000`; copy `.env.example` to `.env` and set `VITE_API_URL` before running `npm run dev`. Build output goes to `dist` as expected by Vercel.

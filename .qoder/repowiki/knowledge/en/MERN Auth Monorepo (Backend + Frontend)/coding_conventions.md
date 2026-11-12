@@ -1,0 +1,2 @@
+- Environment variables are never committed; each subproject ships a `.env.example` that must be copied to `.env` before running.
+- Cross-service communication uses JWT bearer tokens stored client-side in `localStorage` and sent via the `Authorization: Bearer` header.

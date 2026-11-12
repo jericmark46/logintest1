@@ -1,0 +1,1 @@
+React 18 + react-router-dom v6 SPA built with Vite 6 (`@vitejs/plugin-react`). HTTP calls use the native `fetch` API; deployment configured for Vercel via `vercel.json` with a wildcard route rewrite to `index.html`.

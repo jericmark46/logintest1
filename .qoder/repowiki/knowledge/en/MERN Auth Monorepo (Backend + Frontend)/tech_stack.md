@@ -1,0 +1,1 @@
+Node.js monorepo pairing Express + Mongoose + bcrypt + jsonwebtoken on the backend with React + Vite + React Router on the frontend; both target Vercel as their deployment platform.

@@ -1,0 +1,1 @@
+Requires environment variables `MONGODB_URI`, `JWT_SECRET`, `JWT_EXPIRES_IN` (default 7d), `CLIENT_ORIGIN` (comma-separated allowed origins or `*`), and optionally `PORT` (default 5000). Use `npm run dev` (node --watch) for development and `npm start` for production. A `.env.example` is provided alongside `.env`.

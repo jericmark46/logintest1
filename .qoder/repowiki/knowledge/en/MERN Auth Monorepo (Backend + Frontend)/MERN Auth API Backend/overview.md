@@ -1,0 +1,1 @@
+Express + MongoDB authentication service providing user registration, login, and JWT-based protected routes, deployable to Vercel serverless.

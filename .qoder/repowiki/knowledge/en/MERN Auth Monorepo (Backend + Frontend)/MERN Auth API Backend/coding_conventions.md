@@ -1,0 +1,5 @@
+- Route handlers are wrapped in `asyncHandler` so async errors bubble into Express's error-handling middleware instead of being caught inline.
+- Sensitive fields (password) are excluded from Mongoose output via schema-level `select: false` and a custom `toJSON` transform that also remaps `_id` to `id`.
+- Input validation is performed inside controllers using explicit type checks and regex/email tests before reaching the database layer.
+- Authentication is enforced by a `Bearer <token>` scheme checked in the `requireAuth` middleware, which decodes the token and attaches the User document to `req.user`.
+- Database connections are cached at the module/global level (`global._mongooseConnection`) to avoid reconnecting across Vercel serverless function invocations.

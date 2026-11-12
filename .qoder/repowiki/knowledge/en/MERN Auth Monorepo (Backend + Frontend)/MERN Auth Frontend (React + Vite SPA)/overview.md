@@ -1,0 +1,1 @@
+Vite-powered React single-page application providing login, registration, and a protected dashboard that authenticates against the MERN backend via JWT stored in localStorage.

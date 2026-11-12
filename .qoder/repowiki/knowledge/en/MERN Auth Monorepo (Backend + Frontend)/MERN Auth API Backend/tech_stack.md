@@ -1,0 +1,1 @@
+Node ≥20, Express 4, Mongoose 8 for MongoDB, bcryptjs for password hashing, jsonwebtoken for stateless auth tokens, dotenv for env loading; deployed to Vercel via `vercel.json` rewrites routing all paths to `/api`.

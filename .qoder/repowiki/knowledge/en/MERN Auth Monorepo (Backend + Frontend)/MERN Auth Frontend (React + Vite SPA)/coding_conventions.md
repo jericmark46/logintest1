@@ -1,0 +1,5 @@
+- Authentication state (user, loading) and mutations (login, register, logout) are consumed through the `useAuth()` hook rather than direct context access, with the hook throwing if used outside `AuthProvider`.
+- All network requests go through the centralized `api.client.request` helper, which normalizes headers, JSON serialization, error handling, and optional Bearer-token injection — pages never call `fetch` directly.
+- JWT persistence uses a fixed localStorage key constant (`TOKEN_KEY = 'mern_auth_token'`) for both reading on mount and writing after successful auth flows.
+- Route protection is implemented declaratively by wrapping route elements with the `ProtectedRoute` component instead of imperative redirects inside page components.
+- Form pages follow a uniform shape: local `useState` for fields plus `error`/`submitting` flags, a try/catch/finally handler that clears errors and resets submitting, and navigation via `useNavigate()` on success.
